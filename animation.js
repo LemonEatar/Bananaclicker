@@ -16,7 +16,7 @@ function zoom() {
 }
 
 function weiter() {
-  window.location.href = "Game.html";
+  window.location.href = "Gameübers.html";
 }
 
 function onClick() {
