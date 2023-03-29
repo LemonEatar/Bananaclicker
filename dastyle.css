@@ -1,59 +1,58 @@
-body{
-    width:100vw;
+body {
+  width: 100vw;
 }
 
-
-.Clicker{
-    display: flex;
-    justify-content: space-evenly;
+.Clicker {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-#count{
-    display: flex;
-    justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
+#count {
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
 }
-#h1-id{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
+#h1-id {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
 }
-.buttontxt{
-    font-size: 30px;
+.buttontxt {
+  font-size: 30px;
 }
-.upgrades{
-    /*directions */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    /*  */
-    margin: 10px;
+.upgrades {
+  /*directions */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /*  */
+  margin: 10px;
 }
-.button{
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
+.button {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
 }
-#bananenb{
-    border: none;
-    border-radius: 50%;
+#bananenb {
+  border: none;
+  border-radius: 50%;
 }
-.split{
-    width: 5px;
-    height: 620px;
-    background-color: black;
+.split {
+  width: 5px;
+  height: 620px;
+  background-color: black;
 }
-.part{
-    height: fit-content;
+.part {
+  height: fit-content;
 }
-#up1{
-    font-size: 12px;
+#up1 {
+  font-size: 12px;
 }
-#money{
-    font-size: 12px;
+#money {
+  font-size: 12px;
 }
-#up2{
-    font-size: 12px;
+#up2 {
+  font-size: 12px;
 }
-#money2{
-    font-size: 12px;
+#up3 {
+  font-size: 12px;
 }
