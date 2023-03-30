@@ -1,4 +1,4 @@
-var clicks = 10000;
+var clicks = 100000;
 var cpc = 1;
 function add_Clicks() {
   clicks += cpc;
@@ -45,6 +45,19 @@ function Upgrade3() {
   }
   document.getElementById("clicks").innerHTML = clicks;
 }
+let priceU4 = 100000;
+function Upgrade4() {
+  if (clicks >= priceU4) {
+    clicks -= priceU4;
+    cps += 1000;
+    //TODO: debuf cpc to thought of amount
+    cpc += 200;
+    priceU4 = Math.round(priceU4 + priceU4 * 0.25);
+    console.log("Priceu4" + priceU4);
+    document.getElementById("up4").innerHTML = priceU4;
+  }
+  document.getElementById("clicks").innerHTML = clicks;
+}
 
 function clicksps() {
   clicks += cps;
@@ -52,3 +65,4 @@ function clicksps() {
   setTimeout(clicksps, 1000);
 }
 clicksps();
+console.log(priceU4);
