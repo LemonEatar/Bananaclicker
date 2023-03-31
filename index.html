@@ -17,7 +17,13 @@
         <h1>Login</h1>
 
         <label for="email"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="email" required />
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="email"
+          required
+          id="un"
+        />
 
         <label for="psw"><b>Password</b></label>
         <input
@@ -27,31 +33,57 @@
           required
         />
 
-        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn" onclick="submit_username()">
+          Login
+        </button>
         <button type="button" class="btn cancel" onclick="closeForm()">
           Close
         </button>
       </form>
     </div>
-    <div id="container">
-      <h1></h1>
-    </div>
+    <div id="container"></div>
 
     <div>
       <button class="glow-on-hover" id="button" type="button">
         <p id="text">Click for funny games!</p>
       </button>
-
-      <script>
-        function openForm() {
-          document.getElementById("myForm").style.display = "block";
-        }
-
-        function closeForm() {
-          document.getElementById("myForm").style.display = "none";
-        }
-      </script>
       <script src="animation.js"></script>
     </div>
+    <p
+      style="
+        color: white;
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        text-align: right;
+      "
+      id="Username"
+    >
+      Username
+    </p>
+    <script>
+      const Username_Element = document.getElementById("Username");
+      const input_username = document.getElementById("un");
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      const User = {
+        username: "test",
+        password: "wassdsd123",
+      };
+
+      function submit_username() {
+        User.username = input_username.value;
+        Username_Element.textContent = User.username;
+        console.log(Username_Element.textContent);
+        console.log(User.username);
+      }
+    </script>
   </body>
 </html>
