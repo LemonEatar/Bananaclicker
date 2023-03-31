@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Startseite</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: none;
+      }
+
+      canvas {
+        display: block;
+        margin: auto;
+        background-image: url("canvabg.png");
+        border: 5px solid black;
+      }
+
+      #start-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-weight: bold;
+        font-family: monospace;
+        cursor: pointer;
+        color: white;
+        text-shadow: 2px 2px black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="400" height="500"></canvas>
+    <div id="start-text">Click to start</div>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      canvas.addEventListener("click", () => {
+        window.location.href = "flappy.html";
+      });
+    </script>
+  </body>
+</html>
