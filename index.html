@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Gamesite</title>
     <meta charset="UTF-8" />
     <title>Startseite</title>
     <link rel="stylesheet" href="buttondesign.css" />
+    <link rel="stylesheet" href="stylehomepage.css" />
   </head>
-  <title>Gamesite</title>
   <body>
+    <button class="open-button glow-on-hover" onclick="openForm()">
+      Login
+    </button>
+
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <h1>Login</h1>
+
+        <label for="email"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="email" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div>
     <div id="container">
       <h1></h1>
     </div>
@@ -16,6 +42,15 @@
         <p id="text">Click for funny games!</p>
       </button>
 
+      <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+      </script>
       <script src="animation.js"></script>
     </div>
   </body>

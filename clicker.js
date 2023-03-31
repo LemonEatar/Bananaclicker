@@ -18,6 +18,7 @@ function oneUpgrade() {
     document.getElementById("up1").innerHTML = priceU1;
   }
   document.getElementById("clicks").innerHTML = clicks;
+  document.getElementById("cpscount").innerHTML = cps;
 }
 let priceU2 = 1000;
 function Upgrade2() {
@@ -31,6 +32,7 @@ function Upgrade2() {
     document.getElementById("up2").innerHTML = priceU2;
   }
   document.getElementById("clicks").innerHTML = clicks;
+  document.getElementById("cpscount").innerHTML = cps;
 }
 let priceU3 = 10000;
 function Upgrade3() {
@@ -44,6 +46,7 @@ function Upgrade3() {
     document.getElementById("up3").innerHTML = priceU3;
   }
   document.getElementById("clicks").innerHTML = clicks;
+  document.getElementById("cpscount").innerHTML = cps;
 }
 let priceU4 = 100000;
 function Upgrade4() {
@@ -57,6 +60,7 @@ function Upgrade4() {
     document.getElementById("up4").innerHTML = priceU4;
   }
   document.getElementById("clicks").innerHTML = clicks;
+  document.getElementById("cpscount").innerHTML = cps;
 }
 
 function clicksps() {
